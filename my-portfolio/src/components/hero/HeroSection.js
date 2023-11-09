@@ -5,7 +5,7 @@ import Linkedin from '../../assets/Hero/linkedin.png'
 
 const HeroSection = () => {
   return (
-    <div className='p-4'>
+    <div className='p-4 mt-16'>
       <div className="grid grid-cols-12 gap-2 my-20">
         <div className='xl:col-span-6 md:col-span-12 flex justify-center items-center'>
           <div className=''>

@@ -6,6 +6,7 @@ import SkillSection from "./components/skills/SkillSection";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
+import Contact from "./components/contact/Contact";
 
 
 function App() {
@@ -90,6 +91,8 @@ function App() {
         <HeroSection/>
         <SkillSection/>
         <Education/>
+        <Projects/>
+        <Contact/>
       </div>
     </>
   );

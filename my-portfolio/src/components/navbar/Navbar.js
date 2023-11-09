@@ -13,8 +13,8 @@ const Navbar = () => {
 
   return (
     <>
-        <nav className="bg-white border-gray-200 dark:bg-gray-900 w-full shadow-lg md:shadow-none z-30">
-            <div className="w-full flex flex-wrap items-center justify-between p-4">
+        <nav className="fixed top-0 left-0 bg-white border-gray-200 dark:bg-gray-900 w-full shadow-md z-30">
+            <div className="container mx-auto w-full flex flex-wrap items-center justify-between p-4">
                 <a href="#" className="flex items-center z-10">
                     <img src={Hacker} className="h-10 mr-3" alt="Flowbite Logo" />
                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Portfolio</span>

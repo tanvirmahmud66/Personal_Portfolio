@@ -30,7 +30,7 @@ const SkillSection = () => {
 
 
   return (
-    <div className='p-4 mt-8 mb-20'>
+    <div className='p-4 pt-16 mb-8'>
       <h3 className='text-3xl text-center font-semibold'>Skills</h3>
       <h5 className='text-xl text-center font-normal my-4'>Here are some of my skills on which I have been working on for the past 1 years.</h5>
       
@@ -253,7 +253,7 @@ const SkillSection = () => {
                 <div className='my-4'>
                   <div class="flex justify-between mb-1">
                     <span class="text-base font-medium  dark:text-white">Rest Framework</span>
-                    <span class="text-sm font-medium text-red-700 dark:text-white">60%</span>
+                    <span class="text-sm font-medium text-blue-700 dark:text-white">60%</span>
                   </div>
                   <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                     <div class="bg-blue-400 h-2.5 rounded-full w-3/5"></div>
@@ -262,7 +262,7 @@ const SkillSection = () => {
                 <div className='my-4'>
                   <div class="flex justify-between mb-1">
                     <span class="text-base font-medium  dark:text-white">Git</span>
-                    <span class="text-sm font-medium text-red-700 dark:text-white">50%</span>
+                    <span class="text-sm font-medium text-blue-700 dark:text-white">50%</span>
                   </div>
                   <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                     <div class="bg-blue-400 h-2.5 rounded-full w-2/4"></div>
@@ -271,7 +271,7 @@ const SkillSection = () => {
                 <div className='my-4'>
                   <div class="flex justify-between mb-1">
                     <span class="text-base font-medium  dark:text-white">MySQL</span>
-                    <span class="text-sm font-medium text-red-700 dark:text-white">70%</span>
+                    <span class="text-sm font-medium text-blue-700 dark:text-white">70%</span>
                   </div>
                   <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                     <div class="bg-blue-400 h-2.5 rounded-full w-2/3"></div>
@@ -280,7 +280,7 @@ const SkillSection = () => {
                 <div className='my-4'>
                   <div class="flex justify-between mb-1">
                     <span class="text-base font-medium  dark:text-white">PostgreSQL</span>
-                    <span class="text-sm font-medium text-red-700 dark:text-white">70%</span>
+                    <span class="text-sm font-medium text-blue-700 dark:text-white">70%</span>
                   </div>
                   <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                     <div class="bg-blue-400 h-2.5 rounded-full w-2/3"></div>

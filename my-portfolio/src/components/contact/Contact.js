@@ -31,10 +31,10 @@ const Contact = () => {
         
                 </form>
                 <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
-                    <a href="#" class="hover:underline">info@company.com</a>
+                    <a href="#" class="hover:underline">tanvirmahmud.cse66@gmail.com</a>
                 </p>
                 <p class="text-sm text-gray-500 dark:text-gray-400">
-                    <a href="#" class="hover:underline">212-456-7890</a>
+                    <a href="#" class="hover:underline">+880-170-1744-799</a>
                 </p>
             </div>
         </div>

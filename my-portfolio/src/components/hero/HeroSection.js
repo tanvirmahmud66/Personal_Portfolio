@@ -2,14 +2,14 @@ import React from 'react'
 import me from '../../assets/Hero/me.jpeg'
 import hi from '../../assets/Hero/1f44b.gif'
 import Linkedin from '../../assets/Hero/linkedin.png'
-import { forwardRef } from 'react';
+import { Element } from 'react-scroll';
 
 
 const HeroSection = () => {
   
 
   return (
-    <div id='home' className='p-4 pt-44 pb-10'>
+    <Element name='home' className='p-4 pt-44 pb-10'>
       <div className="grid grid-cols-12 gap-2">
         <div className='xl:col-span-6 md:col-span-12 flex justify-center items-center'>
           <div className=''>
@@ -32,7 +32,7 @@ const HeroSection = () => {
           <img src={me} width={450} className='h-auto rounded-full ring-4 ring-red-500 shadow-lg' alt='me'/>
         </div>
       </div>
-    </div>
+    </Element>
   )
 }
 

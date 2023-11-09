@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { forwardRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { Element } from 'react-scroll';
 
 
 const Contact = () => {
@@ -34,7 +35,7 @@ const Contact = () => {
 
 
   return (
-    <div id='contact' className='m-4 my-24 z-10'>
+    <Element name='contact' className='m-4 my-24 z-10'>
         <h3 className='text-3xl text-center text-black font-semibold mb-8'>Contact</h3>
         
         <div>
@@ -90,7 +91,7 @@ const Contact = () => {
             </div>
 
         </div>
-    </div>
+    </Element>
   )
 }
 

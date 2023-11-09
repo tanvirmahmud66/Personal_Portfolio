@@ -5,11 +5,11 @@ import Projects from "./components/projects/Projects";
 import SkillSection from "./components/skills/SkillSection";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import Contact from "./components/contact/Contact";
 import FooterSection from "./components/footer/FooterSection";
 import { BrowserRouter as Router } from "react-router-dom";
-
+import { scroller } from 'react-scroll';
 
 
 
@@ -86,6 +86,13 @@ function App() {
   }, []);
 
   
+  useEffect(() => {
+    scroller.register(['home', 'skills', 'education', 'projects', 'contact']);
+
+    return () => {
+      scroller.unregister(['home', 'skills', 'education', 'projects', 'contact']);
+    };
+  }, []);
 
 
   return (

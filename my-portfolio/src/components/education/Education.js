@@ -1,12 +1,13 @@
 import React from 'react'
-import { forwardRef } from 'react';
+
+import { Element } from 'react-scroll';
 
 
 const Education = () => {
   
 
   return (
-    <div id='education' className='pt-24 flex justify-center items-center'>
+    <Element name='education' className='pt-24 flex justify-center items-center'>
     <div className='w-full py-10 m-4 bg-slate-800 z-10 rounded-lg'>
         <h3 className='text-3xl text-center text-slate-50 font-semibold mb-5'>Education</h3>
         <div className='grid grid-cols-3'>
@@ -46,7 +47,7 @@ const Education = () => {
         </div>
 
     </div>
-    </div>
+    </Element>
   )
 }
 

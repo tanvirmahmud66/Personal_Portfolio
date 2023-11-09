@@ -13,6 +13,7 @@ import git from '../../assets/Skills/git-icon.svg'
 import mysql from '../../assets/Skills/mysql-6.svg'
 import postgre from '../../assets/Skills/postgresql.svg'
 import postman from '../../assets/Skills/postman.svg'
+import { Element } from 'react-scroll';
 
 
 const SkillSection = () => {
@@ -35,7 +36,7 @@ const SkillSection = () => {
 
 
   return (
-    <div id='skills' className='p-4 pt-24'>
+    <Element name='skills' className='p-4 pt-24'>
       <h3 className='text-3xl text-center font-semibold'>Skills</h3>
       <h5 className='text-xl text-center font-normal my-4'>Here are some of my skills on which I have been working on for the past 1 years.</h5>
       
@@ -296,7 +297,7 @@ const SkillSection = () => {
 
           </div>
       </div>
-    </div>
+    </Element>
   )
 }
 

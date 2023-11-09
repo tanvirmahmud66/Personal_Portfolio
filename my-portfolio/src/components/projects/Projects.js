@@ -1,13 +1,13 @@
 import React from 'react'
 import project_pic from '../../assets/Project/Porject.png'
-import { forwardRef } from 'react';
+import { Element } from 'react-scroll';
 
 
 const Projects = () => {
 
 
   return (
-    <div id='projects' className='pt-24'>
+    <Element name='projects' className='pt-24'>
     <div className='m-4  z-10'>
           <h3 className='text-3xl text-center text-black font-semibold'>Projects</h3>
           <div className='flex justify-evenly items-center'>
@@ -47,7 +47,7 @@ const Projects = () => {
           </div>
 
     </div>
-    </div>
+    </Element>
   )
 }
 

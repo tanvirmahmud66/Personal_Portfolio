@@ -1,8 +1,13 @@
 import React from 'react'
+import { forwardRef } from 'react';
+
 
 const Education = () => {
+  
+
   return (
-    <div className='py-10 m-4 bg-slate-800 z-10 rounded-lg mt-24 mb-14'>
+    <div id='education' className='pt-24 flex justify-center items-center'>
+    <div className='w-full py-10 m-4 bg-slate-800 z-10 rounded-lg'>
         <h3 className='text-3xl text-center text-slate-50 font-semibold mb-5'>Education</h3>
         <div className='grid grid-cols-3'>
           <ol class="ml-5 relative col-start-2 col-end-3 text-slate-400 border-l border-gray-200 dark:border-gray-700 dark:text-gray-400">                  
@@ -40,6 +45,7 @@ const Education = () => {
           </ol>
         </div>
 
+    </div>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState , useRef } from 'react'
 import dj from '../../assets/Skills/django.svg'
 import react from '../../assets/Skills/react-2.svg'
 import javascript from '../../assets/Skills/logo-javascript.svg'
@@ -14,10 +14,15 @@ import mysql from '../../assets/Skills/mysql-6.svg'
 import postgre from '../../assets/Skills/postgresql.svg'
 import postman from '../../assets/Skills/postman.svg'
 
+
 const SkillSection = () => {
+
+  
 
   const [technology, setTechnology] = useState(true)
   const [scale, setScale] = useState(false)
+
+  
 
   let techHandle = ()=>{
     setTechnology(true)
@@ -30,7 +35,7 @@ const SkillSection = () => {
 
 
   return (
-    <div className='p-4 pt-16 mb-8'>
+    <div id='skills' className='p-4 pt-24'>
       <h3 className='text-3xl text-center font-semibold'>Skills</h3>
       <h5 className='text-xl text-center font-normal my-4'>Here are some of my skills on which I have been working on for the past 1 years.</h5>
       
@@ -45,7 +50,7 @@ const SkillSection = () => {
         </div>
       </div>
 
-      <div className='grid grid-cols-12 gap-4 my-10'>
+      <div className='grid grid-cols-12 gap-4 mt-10'>
           <div className="col-span-6 z-10 p-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
             <h1 className='text-center font-medium mb-4'>Frontend</h1>
             {technology?

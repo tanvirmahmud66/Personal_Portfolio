@@ -7,6 +7,10 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
 import Contact from "./components/contact/Contact";
+import FooterSection from "./components/footer/FooterSection";
+import { BrowserRouter as Router } from "react-router-dom";
+
+
 
 
 function App() {
@@ -81,21 +85,35 @@ function App() {
     await loadFull(engine);
   }, []);
 
+  
 
 
   return (
     <>
-      <Particles options={options} init={particlesInit} />
-      <div className="container mx-auto">
-        <Navbar/>
-        <HeroSection/>
-        <SkillSection/>
-        <Education/>
-        <Projects/>
-        <Contact/>
-      </div>
+        <Particles options={options} init={particlesInit} />
+
+
+        <div className="container mx-auto">
+          <Router>
+            <Navbar />
+
+            <HeroSection/>
+            <SkillSection/>
+            <Education/>
+            <Projects/>
+            <Contact/>
+
+            <FooterSection/>
+          </Router>
+        </div>
+
+
     </>
   );
 }
 
 export default App;
+
+
+
+

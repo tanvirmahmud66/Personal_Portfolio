@@ -3,6 +3,7 @@ import me from '../../assets/Hero/me.jpeg'
 import hi from '../../assets/Hero/1f44b.gif'
 import Linkedin from '../../assets/Hero/linkedin.png'
 import { Element } from 'react-scroll';
+import TypingAnimation from '../typingAnimation/TypingAnimation';
 
 
 const HeroSection = () => {
@@ -15,7 +16,7 @@ const HeroSection = () => {
           <div className=''>
             <h1 className='text-5xl font-bold flex items-center'><span className='mr-1'><img src={hi} width={40} alt='hi'/></span>Hi, I'm</h1>
             <h1 className='text-5xl font-bold mt-4'>Tanvir Mahmud</h1>
-            <h3 className='text-3xl font-semibold my-4'>I'm a <span className='text-red-500'>Software Engineer</span></h3>
+            <h3 className='text-3xl font-semibold my-4'>I'm a <span className='text-red-500'><TypingAnimation/></span></h3>
             <h5 className='text-lg font-medium'>I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.</h5>
             <div className='mt-4 flex items-center'>
               <a href='https://drive.google.com/file/d/1eXUn6CMBJ_UiKUIspTyDAngFhfZDn7LB/view?usp=drive_link' target='_blank' type="button" class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg z-10 text-sm px-5 py-2.5 text-center mr-2">Resume</a>

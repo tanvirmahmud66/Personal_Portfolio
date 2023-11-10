@@ -8,12 +8,12 @@ const Projects = () => {
 
   return (
     <Element name='projects' className='pt-24'>
-    <div className='m-4  z-10'>
-          <h3 className='text-3xl text-center text-black font-semibold'>Projects</h3>
+    <div className='m-4  z-10 bg-slate-800 rounded-lg py-10'>
+          <h3 className='text-3xl text-center text-white font-semibold'>Projects</h3>
           <div className='flex justify-evenly items-center'>
 
             {/* card */}
-            <a href='https://csbox.netlify.app' target='_blank' className="mt-8 my-4 z-10 cursor-pointer max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href='https://csbox.netlify.app' target='_blank' className="mt-8 my-4 z-10 cursor-pointer shadow-lg max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
                 <div>
                     <img className="rounded-t-lg" src={project_pic} alt="project_pic" />
                 </div>

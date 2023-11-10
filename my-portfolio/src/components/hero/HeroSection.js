@@ -18,14 +18,20 @@ const HeroSection = () => {
             <h1 className='text-5xl font-bold mt-4'>Tanvir Mahmud</h1>
             <h3 className='text-3xl font-semibold my-4'>I'm a <span className='text-red-500'><TypingAnimation/></span></h3>
             <h5 className='text-lg font-medium'>I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.</h5>
-            <div className='mt-4 flex items-center'>
+            <div className='mt-8 flex items-center'>
               <a href='https://drive.google.com/file/d/1eXUn6CMBJ_UiKUIspTyDAngFhfZDn7LB/view?usp=drive_link' target='_blank' type="button" class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg z-10 text-sm px-5 py-2.5 text-center mr-2">Resume</a>
-              <a href='https://www.linkedin.com/in/tanvirmahmud61/' target='_blank' className="relative inline-flex items-center justify-center p-0.5 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
-                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex items-center">
+              <a href='https://www.linkedin.com/in/tanvirmahmud61/' target='_blank' type="button" class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg z-10 text-sm px-5 py-2.5 text-center mr-2">
+                <span className="relative transition-all ease-in duration-75 text-white rounded-md group-hover:bg-opacity-0 flex items-center">
+                      <img src={Linkedin} width={20} alt='linkedin'/>
+                      <div className='ml-2'>Profile</div>
+                  </span>
+              </a>
+              {/* <a href='https://www.linkedin.com/in/tanvirmahmud61/' target='_blank' className="relative inline-flex items-center justify-center p-0.5 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 text-white rounded-md group-hover:bg-opacity-0 flex items-center">
                     <img src={Linkedin} width={20} alt='linkedin'/>
                     <div className='ml-2'>Profile</div>
                 </span>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 const texts = [
     'Software Engineer', 
-    'Full-Stack Developer', 
-    'Python Developer'
+    'Full-Stack Developer',
+    'React Developer', 
+    'Python Programmer',
+    
 ];
 
 const TypingAnimation = () => {
@@ -20,7 +22,7 @@ const TypingAnimation = () => {
       } else {
         setCurrentText((prevText) => texts[index].slice(0, prevText.length + 1));
       }
-    },190);
+    },280);
 
     return () => clearInterval(intervalId);
   }, [index, currentText]);

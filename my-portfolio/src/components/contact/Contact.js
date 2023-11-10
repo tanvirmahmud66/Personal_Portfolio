@@ -37,11 +37,10 @@ const Contact = () => {
   return (
     <Element name='contact' className='m-4 my-24 z-10'>
         <h3 className='text-3xl text-center text-black font-semibold mb-8'>Contact</h3>
-        
-        <div>
-            
             <div className='flex justify-center items-center'>
-                <div class="p-4 border rounded-lg bg-white z-10 w-2/4">
+
+
+                <div class="w-full p-4 border rounded-lg bg-white z-10 md:w-3/4 xl:w-2/4">
                     <button type="button" data-drawer-hide="drawer-contact" aria-controls="drawer-contact" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
                         <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
@@ -88,9 +87,9 @@ const Contact = () => {
                         <a href="#" class="hover:underline">+880-170-1744-799</a>
                     </p>
                 </div>
-            </div>
 
-        </div>
+
+            </div>
     </Element>
   )
 }

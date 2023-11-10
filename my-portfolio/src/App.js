@@ -100,7 +100,7 @@ function App() {
         <Particles options={options} init={particlesInit} />
 
 
-        <div className="container mx-auto">
+        <div className="container mx-auto xl:px-20">
           <Router>
             <Navbar />
 

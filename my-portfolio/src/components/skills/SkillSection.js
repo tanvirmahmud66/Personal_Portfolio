@@ -52,7 +52,7 @@ const SkillSection = () => {
       </div>
 
       <div className='grid grid-cols-12 gap-4 mt-10'>
-          <div className="col-span-6 z-10 p-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+          <div className="col-span-12 xl:col-span-6 z-10 p-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
             <h1 className='text-center font-medium mb-4'>Frontend</h1>
             {technology?
               <>
@@ -181,11 +181,11 @@ const SkillSection = () => {
               </>
             }
           </div>
-          <div className="col-span-6 z-10 p-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+          <div className="col-span-12 xl:col-span-6 z-10 p-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
             <h1 className='text-center font-medium mb-3'>Backend</h1>
             {technology?
               <>
-                <div className='flex justify-center'>
+                <div className='md:flex md:justify-center'>
                   <button type="button" class=" py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border-4 border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
                     <div className='flex justify-center items-center'>
                       <img src={python} width={15} alt='py'/>
@@ -199,7 +199,7 @@ const SkillSection = () => {
                     </div>
                   </button>
                 </div>
-                <div className='flex justify-center'>
+                <div className='md:flex md:justify-center'>
                   <button type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border-4 border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
                     Rest Framework
                   </button>
@@ -210,7 +210,7 @@ const SkillSection = () => {
                     JWT
                   </button>
                 </div>
-                <div className='flex justify-center'>
+                <div className='md:flex md:justify-center'>
                   <button type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border-4 border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
                     <div className='flex justify-center items-center'>
                       <img src={git} width={15} alt='git'/>

@@ -109,73 +109,64 @@ const SkillSection = () => {
                 <div className='my-4'>
                   <div class="flex justify-between mb-1">
                     <span class="text-base font-medium dark:text-white">React Js</span>
-                    <span class="text-sm font-medium text-red-700 dark:text-white">75%</span>
+                    <span class="text-sm font-medium text-green-700 dark:text-white">70%</span>
                   </div>
                   <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                    <div class="bg-red-400 h-2.5 rounded-full w-3/4"></div>
+                    <div class="bg-green-400 h-2.5 rounded-full w-2/3"></div>
                   </div>
                 </div>
                 <div className='my-4'>
                   <div class="flex justify-between mb-1">
                     <span class="text-base font-medium  dark:text-white">Javascript</span>
-                    <span class="text-sm font-medium text-red-700 dark:text-white">70%</span>
+                    <span class="text-sm font-medium text-green-700 dark:text-white">60%</span>
                   </div>
                   <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                    <div class="bg-red-400 h-2.5 rounded-full w-2/3"></div>
-                  </div>
-                </div>
-                <div className='my-4'>
-                  <div class="flex justify-between mb-1">
-                    <span class="text-base font-medium  dark:text-white">JQuery</span>
-                    <span class="text-sm font-medium text-red-700 dark:text-white">45%</span>
-                  </div>
-                  <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                    <div class="bg-red-400 h-2.5 rounded-full w-64"></div>
+                    <div class="bg-green-400 h-2.5 rounded-full w-3/5"></div>
                   </div>
                 </div>
                 <div className='my-4'>
                   <div class="flex justify-between mb-1">
                     <span class="text-base font-medium  dark:text-white">Tailwind</span>
-                    <span class="text-sm font-medium text-red-700 dark:text-white">60%</span>
+                    <span class="text-sm font-medium text-green-700 dark:text-white">50%</span>
                   </div>
                   <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                    <div class="bg-red-400 h-2.5 rounded-full w-80"></div>
+                    <div class="bg-green-400 h-2.5 rounded-full w-2/4"></div>
                   </div>
                 </div>
                 <div className='my-4'>
                   <div class="flex justify-between mb-1">
                     <span class="text-base font-medium  dark:text-white">Bootstrap</span>
-                    <span class="text-sm font-medium text-red-700 dark:text-white">80%</span>
+                    <span class="text-sm font-medium text-green-700 dark:text-white">80%</span>
                   </div>
                   <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                    <div class="bg-red-400 h-2.5 rounded-full w-5/6"></div>
+                    <div class="bg-green-400 h-2.5 rounded-full w-5/6"></div>
                   </div>
                 </div>
                 <div className='my-4'>
                   <div class="flex justify-between mb-1">
                     <span class="text-base font-medium  dark:text-white">Sass</span>
-                    <span class="text-sm font-medium text-red-700 dark:text-white">40%</span>
+                    <span class="text-sm font-medium text-green-700 dark:text-white">40%</span>
                   </div>
                   <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                    <div class="bg-red-400 h-2.5 rounded-full w-2/6"></div>
+                    <div class="bg-green-400 h-2.5 rounded-full w-3/5"></div>
                   </div>
                 </div>
                 <div className='my-4'>
                   <div class="flex justify-between mb-1">
                     <span class="text-base font-medium  dark:text-white">HTML</span>
-                    <span class="text-sm font-medium text-red-700 dark:text-white">70%</span>
+                    <span class="text-sm font-medium text-green-700 dark:text-white">80%</span>
                   </div>
                   <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                    <div class="bg-red-400 h-2.5 rounded-full w-4/6"></div>
+                    <div class="bg-green-400 h-2.5 rounded-full w-5/6"></div>
                   </div>
                 </div>
                 <div className='my-4'>
                   <div class="flex justify-between mb-1">
                     <span class="text-base font-medium  dark:text-white">CSS</span>
-                    <span class="text-sm font-medium text-red-700 dark:text-white">80%</span>
+                    <span class="text-sm font-medium text-green-700 dark:text-white">75%</span>
                   </div>
                   <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                    <div class="bg-red-400 h-2.5 rounded-full w-5/6"></div>
+                    <div class="bg-green-400 h-2.5 rounded-full w-3/4"></div>
                   </div>
                 </div>
               </>

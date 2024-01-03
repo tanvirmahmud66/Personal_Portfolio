@@ -2,6 +2,7 @@ import React from 'react'
 import me from '../../assets/Hero/me.jpeg'
 import hi from '../../assets/Hero/1f44b.gif'
 import Linkedin from '../../assets/Hero/linkedin.png'
+import Resume from '../../assets/Hero/check.png'
 import { Element } from 'react-scroll';
 import TypingAnimation from '../typingAnimation/TypingAnimation';
 
@@ -26,12 +27,17 @@ const HeroSection = () => {
             <h3 className='text-xl sm:text-3xl font-semibold my-4'>I'm a <span className='text-red-500'><TypingAnimation/></span></h3>
             <h5 className='text-md sm:text-lg font-medium'>I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.</h5>
             <div className='mt-8 flex items-center justify-center xl:justify-start'>
-              <a href='https://rxresu.me/tanvirmahmudfahim1313/tanvir-mahmud' target='_blank' type="button" class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg z-10 text-sm px-5 py-2.5 text-center mr-2">Resume</a>
+              <a href='https://drive.google.com/file/d/1Yr1tgGP1i8UDVaXjmpjwvWLG2vfFn5us/view?usp=sharing' target='_blank' type="button" class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg z-10 text-sm px-5 py-2.5 text-center mr-2">
+                <span className="relative transition-all ease-in duration-75 text-white rounded-md group-hover:bg-opacity-0 flex items-center">
+                      <img src={Resume} width={22} alt='linkedin'/>
+                      <div className='ml-2'>Resume</div>
+                </span>
+              </a>
               <a href='https://www.linkedin.com/in/tanvirmahmud61/' target='_blank' type="button" class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg z-10 text-sm px-5 py-2.5 text-center mr-2">
                 <span className="relative transition-all ease-in duration-75 text-white rounded-md group-hover:bg-opacity-0 flex items-center">
                       <img src={Linkedin} width={20} alt='linkedin'/>
                       <div className='ml-2'>Profile</div>
-                  </span>
+                </span>
               </a>
             </div>
           </div>

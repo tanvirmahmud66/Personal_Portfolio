@@ -10,6 +10,7 @@ import Contact from "./components/contact/Contact";
 import FooterSection from "./components/footer/FooterSection";
 import { BrowserRouter as Router } from "react-router-dom";
 import { scroller } from 'react-scroll';
+import Layout from "./layout/Layout";
 
 
 
@@ -100,7 +101,7 @@ function App() {
         <Particles options={options} init={particlesInit} />
 
 
-        <div className="container mx-auto xl:px-20">
+        {/* <div className="container mx-auto xl:px-20">
           <Router>
             <Navbar />
 
@@ -112,7 +113,17 @@ function App() {
 
             <FooterSection/>
           </Router>
-        </div>
+        </div> */}
+
+        <Layout>
+          <Router>
+            <HeroSection/>
+            <SkillSection/>
+            <Education/>
+            <Projects/>
+            <Contact/>
+          </Router>
+        </Layout>
 
 
     </>

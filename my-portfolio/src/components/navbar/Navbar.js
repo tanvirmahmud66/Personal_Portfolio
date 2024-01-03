@@ -1,15 +1,48 @@
-import React, { useState} from 'react'
+import React, { useState , useEffect} from 'react'
 import Hacker from '../../assets/navbar/hacker.png'
-import { Link as ScrollLink } from 'react-scroll';
+import { Link as ScrollLink, Events, animateScroll as scroll,scroller  } from 'react-scroll';
 
 
 const Navbar = () => {
 
     const [isNavOpen, setIsNavOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState('home');
+
+    const scrollToSection = (section) => {
+        scroller.scrollTo(section, {
+          duration: 1000,
+          delay: 0,
+          smooth: 'easeInOutQuart',
+        });
+        setActiveSection(section);
+        setIsNavOpen(false);
+      };
+    
+      const renderNavItems = () => {
+        const navItems = ['home', 'skills', 'education', 'projects', 'contact'];
+    
+        return navItems.map((item) => (
+          <li key={item} className={`flex items-center justify-center ${activeSection === item ? 'text-blue-500' : ''}`}>
+            <ScrollLink
+              to={item}
+              spy={true}
+              smooth={true}
+              duration={1000}
+              className={`cursor-pointer block py-2 pl-3 pr-4 hover:text-blue-500 transition-all`}
+              onClick={() => scrollToSection(item)}
+            >
+              {item.charAt(0).toUpperCase() + item.slice(1)}
+            </ScrollLink>
+          </li>
+        ));
+      };
+    
 
     const toggleNav = () => {
       setIsNavOpen(!isNavOpen);
     }
+
+
 
   return (
     <>
@@ -27,21 +60,9 @@ const Navbar = () => {
                 </button>
                 <div className="hidden w-full lg:block md:w-auto z-10" id="navbar-default">
                     <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                        <li  className='flex items-center justify-center'>
-                            <ScrollLink to='home' smooth={true} duration={1000} className="cursor-pointer block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</ScrollLink>
-                        </li>
-                        <li className='flex items-center justify-center'>
-                            <ScrollLink to='skills' smooth={true} duration={1000}  className="cursor-pointer block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Skills</ScrollLink>
-                        </li>
-                        <li  className='flex items-center justify-center'>
-                            <ScrollLink to='education' smooth={true} duration={1000} className="cursor-pointer block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Education</ScrollLink>
-                        </li>
-                        <li className='flex items-center justify-center'>
-                            <ScrollLink to='projects'  smooth={true} duration={1000} className="cursor-pointer block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Project</ScrollLink>
-                        </li>
-                        <li className='flex items-center justify-center'>
-                            <ScrollLink to='contact' smooth={true} duration={1000}  className="cursor-pointer block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</ScrollLink>
-                        </li>
+                        
+                        {renderNavItems()}
+
                         <li className='flex items-center justify-center'>
                             <a href='https://github.com/tanvirmahmud66' target='_blank' className="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30">
                                 <svg className="w-4 h-4 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">

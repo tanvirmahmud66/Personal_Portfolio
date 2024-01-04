@@ -1,12 +1,29 @@
 import React, { useState , useEffect} from 'react'
 import Hacker from '../../assets/navbar/hacker.png'
-import { Link as ScrollLink, Events, animateScroll as scroll,scroller  } from 'react-scroll';
-
+import { Link as ScrollLink, scroller  } from 'react-scroll';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
 
+    const location = useLocation()
+    const navigate = useNavigate();
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [activeSection, setActiveSection] = useState('home');
+    const [clickedItem, setClickedItem] =useState('')
+    
+    const sectionId = clickedItem? clickedItem:'home'
+
+    useEffect(() => {
+        if (location.pathname === '/') {
+          const sectionElement = document.getElementById(sectionId);
+          if (sectionElement && clickedItem) {
+            window.scrollTo({
+              top: sectionElement.offsetTop,
+              behavior: 'smooth',
+            });
+          }
+        }
+      }, [location.pathname]);
 
     const scrollToSection = (section) => {
         scroller.scrollTo(section, {
@@ -24,12 +41,18 @@ const Navbar = () => {
         return navItems.map((item) => (
           <li key={item} className={`flex items-center justify-center ${activeSection === item ? 'text-blue-500' : ''}`}>
             <ScrollLink
-              to={item}
+              to={location.pathname.includes("/project/") ? '/' : item}
               spy={true}
               smooth={true}
               duration={1000}
               className={`cursor-pointer block py-2 pl-3 pr-4 hover:text-blue-500 transition-all`}
-              onClick={() => scrollToSection(item)}
+              onClick={() => {
+                scrollToSection(item);
+                if (location.pathname.includes("/project/")) {
+                  setClickedItem(item)
+                  navigate('/'); // Redirect to the base route if on the second route
+                }
+              }}    
             >
               {item.charAt(0).toUpperCase() + item.slice(1)}
             </ScrollLink>
@@ -48,7 +71,10 @@ const Navbar = () => {
     <>
         <nav className="fixed top-0 left-0 bg-white border-gray-200 dark:bg-gray-900 w-full shadow-md z-30">
             <div className="container mx-auto xl:px-24 w-full flex flex-wrap items-center justify-between p-4">
-                <a href="/" className="flex items-center z-10">
+                <a 
+                  href="/" 
+                  className="flex items-center z-10"
+                >
                     <img src={Hacker} className="h-10 mr-3" alt="Flowbite Logo" />
                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Portfolio</span>
                 </a>

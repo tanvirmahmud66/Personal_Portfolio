@@ -1,4 +1,4 @@
-import React, { useState , useRef } from 'react'
+import React, { useState} from 'react'
 import dj from '../../assets/Skills/django.svg'
 import react from '../../assets/Skills/react-2.svg'
 import javascript from '../../assets/Skills/logo-javascript.svg'
@@ -42,10 +42,10 @@ const SkillSection = () => {
       
       <div className='flex justify-center'>
         <div class="inline-flex z-10 rounded-md shadow-sm" role="group">
-          <button onClick={techHandle} type="button" class={`px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-gray-900 rounded-l-lg hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700`}>
+          <button onClick={techHandle} type="button" className={`px-4 py-2 text-sm font-medium border border-gray-900 rounded-l-lg hover:cursor-pointer ${technology?"bg-gray-900 text-white":""}`}>
             Technology
           </button>
-          <button onClick={scaleHandle} type="button" class="px-4 py-2 text-sm font-medium text-gray-900 bg-transparent border border-l-0 border-gray-900 rounded-r-md hover:bg-gray-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-gray-900 focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700">
+          <button onClick={scaleHandle} type="button" className={`px-4 py-2 text-sm font-medium border border-gray-900 rounded-r-lg hover:cursor-pointer ${scale?"bg-gray-900 text-white":""}`}>
             Scaling
           </button>
         </div>

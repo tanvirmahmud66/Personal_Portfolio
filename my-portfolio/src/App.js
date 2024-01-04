@@ -1,16 +1,12 @@
-import Education from "./components/education/Education";
-import HeroSection from "./components/hero/HeroSection";
-import Navbar from "./components/navbar/Navbar";
-import Projects from "./components/projects/Projects";
-import SkillSection from "./components/skills/SkillSection";
+
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { useCallback, useEffect } from "react";
-import Contact from "./components/contact/Contact";
-import FooterSection from "./components/footer/FooterSection";
-import { BrowserRouter as Router } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { scroller } from 'react-scroll';
 import Layout from "./layout/Layout";
+import SingleProject from "./components/projects/SingleProject";
+import MainRoute from "./MainRoute";
 
 
 
@@ -64,7 +60,7 @@ function App() {
           mode: "grab"
         },
         onClick: {
-          enable: true,
+          enable: false,
           mode: "push"
         }
       },
@@ -99,33 +95,14 @@ function App() {
   return (
     <>
         <Particles options={options} init={particlesInit} />
-
-
-        {/* <div className="container mx-auto xl:px-20">
-          <Router>
-            <Navbar />
-
-            <HeroSection/>
-            <SkillSection/>
-            <Education/>
-            <Projects/>
-            <Contact/>
-
-            <FooterSection/>
-          </Router>
-        </div> */}
-
-        <Layout>
-          <Router>
-            <HeroSection/>
-            <SkillSection/>
-            <Education/>
-            <Projects/>
-            <Contact/>
-          </Router>
-        </Layout>
-
-
+        <Router>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<MainRoute/>}/>
+              <Route path="/project/:id/:name" element={<SingleProject/>}/>
+            </Routes>
+          </Layout>
+        </Router>
     </>
   );
 }

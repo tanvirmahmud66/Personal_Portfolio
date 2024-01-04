@@ -24,7 +24,7 @@ const SingleProject = () => {
 
 
   return (
-    <div className='mx-4 mt-28 min-h-[770px] flex flex-col md:flex-row justify-between items-start'>
+    <div className='mx-4 mt-28 min-h-[625px] flex flex-col md:flex-row justify-between items-start'>
       <div className='md:w-[30%]'>
         <h3 className='text-3xl font-bold'>{project.project_name}</h3>
         <h3 className='mt-4 text-lg font-normal'>{project.description}</h3>

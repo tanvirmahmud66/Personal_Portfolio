@@ -1,5 +1,31 @@
-import csbox from '../../assets/Project/Porject.png'
-import appsmanager from '../../assets/Project/project_2.png'
+import Landing_csbox from '../../assets/Project/csbox/Landing.png'
+import Assignment_csbox from '../../assets/Project/csbox/Assignment.png'
+import AssginmentExpand_csbox from '../../assets/Project/csbox/AssignmentExpand.png'
+import CreateSession_csbox from '../../assets/Project/csbox/Create_session.png'
+import createAssignment_csbox from '../../assets/Project/csbox/createAssignment.png'
+import CreatePost_csbox from '../../assets/Project/csbox/CreatePost.png'
+import DeleteAssignment_csbox from '../../assets/Project/csbox/DeleteAssignment.png'
+import DeleteSession_csbox from '../../assets/Project/csbox/DeleteSession.png'
+import Edit_session_csbox from '../../assets/Project/csbox/Edit_session.png'
+import EditAssignment_csbox from '../../assets/Project/csbox/EditAssignment.png'
+import files_csbox from '../../assets/Project/csbox/files.png'
+import filesUpload_csbox from '../../assets/Project/csbox/filesUpload.png'
+import ForgetPassword_csbox from '../../assets/Project/csbox/Forget_password.png'
+import Homepage_csbox from '../../assets/Project/csbox/Homepage.png'
+import LeaveSession_csbox from '../../assets/Project/csbox/LeaveSession.png'
+import Settings1_csbox from '../../assets/Project/csbox/Settings1.png'
+import Settings2_csbox from '../../assets/Project/csbox/Settings2.png'
+import SingleSession_csbox from '../../assets/Project/csbox/SignleSession.png'
+import Signup_csbox from '../../assets/Project/csbox/Signup.png'
+import SingleSession2_csbox from '../../assets/Project/csbox/SingleSessoin2.png'
+
+import Landing_appsmanager from '../../assets/Project/appsmanager/1.png'
+import Weather_appsmanager from '../../assets/Project/appsmanager/2.png'
+import Quiz1_appsmanager from '../../assets/Project/appsmanager/3.png'
+import Quiz2_appsmanager from '../../assets/Project/appsmanager/4.png'
+import Quiz3_appsmanager from '../../assets/Project/appsmanager/5.png'
+import Quiz4_appsmanager from '../../assets/Project/appsmanager/6.png'
+import Quiz5_appsmanager from '../../assets/Project/appsmanager/7.png'
 
 const projects = [
     {
@@ -7,10 +33,10 @@ const projects = [
         name:"csbox",
         project_name:"csbox - Virtual Learnin Platform",
         description:"CSBox is a cutting-edge virtual learning platform revolutionizing online education.",
-        thumbnail:csbox,
+        thumbnail:Landing_csbox,
         frontend:['Javascript', 'React', 'Bootstrap', 'Netlify'],
         backend:['Python','Django','Rest-Framework','Rest APIs', 'Pythonanywhere'],
-        screenShots:[csbox,appsmanager],
+        screenShots:[Landing_csbox,Signup_csbox, ForgetPassword_csbox,Homepage_csbox, CreateSession_csbox,Settings1_csbox, Edit_session_csbox,DeleteSession_csbox,Settings2_csbox,LeaveSession_csbox,SingleSession_csbox,SingleSession2_csbox,CreatePost_csbox,files_csbox,filesUpload_csbox,Assignment_csbox,createAssignment_csbox,EditAssignment_csbox,DeleteAssignment_csbox,AssginmentExpand_csbox],
         projectLink:'https://csbox.netlify.app'
     },
     {
@@ -18,10 +44,10 @@ const projects = [
         name:"appsmanager",
         project_name:"Apps Manager",
         description:"Task Manager, Weather app, Quiz app.",
-        thumbnail:appsmanager,
+        thumbnail:Landing_appsmanager,
         frontend:['React', 'Tailwind', 'Netlify'],
         backend:['Django','Rest-Framework','Pythonanywhere'],
-        screenShots:[],
+        screenShots:[Landing_appsmanager,Weather_appsmanager,Quiz1_appsmanager,Quiz2_appsmanager,Quiz3_appsmanager,Quiz4_appsmanager,Quiz5_appsmanager],
         projectLink:'https://appsmanager.netlify.app'
     },
 ]

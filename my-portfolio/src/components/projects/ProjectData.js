@@ -27,6 +27,11 @@ import Quiz3_appsmanager from '../../assets/Project/appsmanager/5.png'
 import Quiz4_appsmanager from '../../assets/Project/appsmanager/6.png'
 import Quiz5_appsmanager from '../../assets/Project/appsmanager/7.png'
 
+import pic1_auth from '../../assets/Project/social_auth_dj/1.png'
+import pic2_auth from '../../assets/Project/social_auth_dj/2.png'
+import pic3_auth from '../../assets/Project/social_auth_dj/3.png'
+import pic4_auth from '../../assets/Project/social_auth_dj/4.png'
+
 const projects = [
     {
         id:1,
@@ -50,6 +55,17 @@ const projects = [
         screenShots:[Landing_appsmanager,Weather_appsmanager,Quiz1_appsmanager,Quiz2_appsmanager,Quiz3_appsmanager,Quiz4_appsmanager,Quiz5_appsmanager],
         projectLink:'https://appsmanager.netlify.app'
     },
+    {
+        id:3,
+        name:"AuthWithSocialLogin",
+        project_name:"Django Auth & Social Login",
+        description:"Django Production Level Authentication with Google and Facebook Login with Custom user",
+        thumbnail:pic1_auth,
+        frontend:['React', 'Tailwind'],
+        backend:['Django', 'djoser','Oauth2','SSO','JWT','DRF',],
+        screenShots:[pic1_auth,pic2_auth,pic3_auth,pic4_auth],
+        projectLink:'https://github.com/tanvirmahmud66/Auth_with_Social.git'
+    }
 ]
 
 export default projects;

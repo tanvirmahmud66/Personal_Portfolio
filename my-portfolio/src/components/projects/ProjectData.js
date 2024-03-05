@@ -32,9 +32,38 @@ import pic2_auth from '../../assets/Project/social_auth_dj/2.png'
 import pic3_auth from '../../assets/Project/social_auth_dj/3.png'
 import pic4_auth from '../../assets/Project/social_auth_dj/4.png'
 
+import ss_1 from '../../assets/Project/awa/ss_1.png'
+import ss_2 from '../../assets/Project/awa/ss_2.png'
+import ss_3 from '../../assets/Project/awa/ss_3.png'
+import ss_4 from '../../assets/Project/awa/ss_4.png'
+import ss_5 from '../../assets/Project/awa/ss_5.png'
+import ss_6 from '../../assets/Project/awa/ss_6.png'
+import ss_7 from '../../assets/Project/awa/ss_7.png'
+import ss_8 from '../../assets/Project/awa/ss_8.png'
+import ss_9 from '../../assets/Project/awa/ss_9.png'
+import ss_10 from '../../assets/Project/awa/ss_10.png'
+import ss_11 from '../../assets/Project/awa/ss_11.png'
+import ss_12 from '../../assets/Project/awa/ss_12.png'
+import ss_13 from '../../assets/Project/awa/ss_13.png'
+import ss_14 from '../../assets/Project/awa/ss_14.png'
+import ss_15 from '../../assets/Project/awa/ss_15.png'
+import ss_16 from '../../assets/Project/awa/ss_16.png'
+import ss_17 from '../../assets/Project/awa/ss_17.png'
+
 const projects = [
     {
         id:1,
+        name:"AWA Software House",
+        project_name:"AWA Software House",
+        description:"AWA Software House is a software firm official Landing Template website with React.",
+        thumbnail:ss_1,
+        frontend:['React', 'Tailwind', 'Netlify'],
+        backend:[],
+        screenShots:[ss_1,ss_2,ss_3,ss_4,ss_5,ss_6,ss_7,ss_8,ss_9,ss_10,ss_11,ss_12,ss_13,ss_14,ss_15,ss_16,ss_17],
+        projectLink:'https://awasoftwarehouse.netlify.app'
+    },
+    {
+        id:2,
         name:"csbox",
         project_name:"csbox - Virtual Learnin Platform",
         description:"CSBox is a cutting-edge virtual learning platform revolutionizing online education.",
@@ -45,7 +74,7 @@ const projects = [
         projectLink:'https://csbox.netlify.app'
     },
     {
-        id:2,
+        id:3,
         name:"appsmanager",
         project_name:"Apps Manager",
         description:"Task Manager, Weather app, Quiz app.",
@@ -56,7 +85,7 @@ const projects = [
         projectLink:'https://appsmanager.netlify.app'
     },
     {
-        id:3,
+        id:4,
         name:"AuthWithSocialLogin",
         project_name:"Django Auth & Social Login",
         description:"Django Production Level Authentication with Google and Facebook Login with Custom user",

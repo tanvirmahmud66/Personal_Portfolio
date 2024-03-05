@@ -29,23 +29,23 @@ const Projects = () => {
 
 
   return(
-    <Element name='projects' className='pt-16 sm:pt-24'>
-  <div className='m-4 bg-slate-800 rounded-lg'>
+    <Element name='projects' className='pt-16 sm:pt-24 '>
+  <div className='m-4 bg-slate-800 z-10 rounded-lg'>
     <h3 className='text-3xl p-4 text-center text-white font-semibold'>Projects</h3>
     <div className='h-full w-full m-auto py-5 p-4 relative group'>
 
         {/* card render */}
-        <div className='w-full sm:w-1/2 mx-auto rounded-2xl bg-center bg-cover duration-500 bg-white'>
+        <div className='w-full min-h-[500px] sm:w-1/2 mx-auto rounded-2xl bg-center bg-cover duration-500 bg-white'>
           <Link to={`/project/${projectsData[currentIndex].id}/${projectsData[currentIndex].name}`} className='block'>
             <div className="w-full h-full">
               <img src={projectsData[currentIndex].thumbnail} alt='thumbnail' className='rounded-t-lg w-full' />
               <div className='my-2 text-center'>
-                {projectsData[currentIndex].frontend.map((each, index) => (
+                {projectsData[currentIndex].frontend && projectsData[currentIndex].frontend.map((each, index) => (
                   <span key={index} className="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">{each}</span>
                 ))}
               </div>
               <div className='my-2 text-center'>
-                {projectsData[currentIndex].backend.map((each, index) => (
+                {projectsData[currentIndex].backend && projectsData[currentIndex].backend.map((each, index) => (
                   <span key={index} className="bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300">{each}</span>
                 ))}
               </div>
@@ -61,15 +61,15 @@ const Projects = () => {
       
 
       {/* Left Arrow */}
-      <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-        <svg onClick={prevSlide} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
+      <div onClick={prevSlide} className='absolute top-[50%] -translate-x-0 translate-y-[-50%] h-full px-4 left-5 text-2xl rounded-lg p-2 bg-black/20 text-white cursor-pointer flex justify-center items-center'>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
         </svg>
       </div>
 
       {/* Right Arrow */}
-      <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-        <svg onClick={nextSlide} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
+      <div onClick={nextSlide} className='absolute top-[50%] -translate-x-0 translate-y-[-50%] h-full px-4 right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer flex justify-center items-center'>
+        <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
         </svg>
       </div>
@@ -82,8 +82,10 @@ const Projects = () => {
           key={slideIndex}
           onClick={() => goToSlide(slideIndex)}
           className='text-2xl cursor-pointer'
-        >
-          <img className='m-3' src={Dot} width={15} alt="project_pic" />
+        > 
+        {slideIndex==currentIndex?
+          <img className='m-3 bg-red-500 p-1 rounded-full' src={Dot} width={15} alt="project_pic" />:
+          <img className='m-3' src={Dot} width={15} alt="project_pic" />}
         </div>
       ))}
     </div>

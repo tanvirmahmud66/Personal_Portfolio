@@ -50,9 +50,28 @@ import ss_15 from '../../assets/Project/awa/ss_15.png'
 import ss_16 from '../../assets/Project/awa/ss_16.png'
 import ss_17 from '../../assets/Project/awa/ss_17.png'
 
+import amarshop1 from '../../assets/Project/amarshop/1_amarshop.png'
+import amarshop2 from '../../assets/Project/amarshop/2_amarshop.png'
+import amarshop3 from '../../assets/Project/amarshop/3_amarshop.png'
+import amarshop4 from '../../assets/Project/amarshop/4_amarshop.png'
+
+
+
+
 const projects = [
     {
         id:1,
+        name:"Amar Shop",
+        project_name:"Amar Shop",
+        description:"Amar Shop is a single level inventory Management System admin dashboard.",
+        thumbnail:amarshop1,
+        frontend:['Django Template Engine', 'Bootstrap','Chart.js'],
+        backend:["Django", "MVT","Postgresql"],
+        screenShots:[amarshop1,amarshop2,amarshop3,amarshop4],
+        projectLink:'https://amarshop-v1.onrender.com/admin-panel/'
+    },
+    {
+        id:2,
         name:"AWA Software House",
         project_name:"AWA Software House",
         description:"AWA Software House is a software firm official Landing Template website with React.",
@@ -63,7 +82,7 @@ const projects = [
         projectLink:'https://awasoftwarehouse.netlify.app'
     },
     {
-        id:2,
+        id:3,
         name:"csbox",
         project_name:"csbox - Virtual Learnin Platform",
         description:"CSBox is a cutting-edge virtual learning platform revolutionizing online education.",
@@ -74,7 +93,7 @@ const projects = [
         projectLink:'https://csbox.netlify.app'
     },
     {
-        id:3,
+        id:4,
         name:"appsmanager",
         project_name:"Apps Manager",
         description:"Task Manager, Weather app, Quiz app.",
@@ -85,7 +104,7 @@ const projects = [
         projectLink:'https://appsmanager.netlify.app'
     },
     {
-        id:4,
+        id:5,
         name:"AuthWithSocialLogin",
         project_name:"Django Auth & Social Login",
         description:"Django Production Level Authentication with Google and Facebook Login with Custom user",

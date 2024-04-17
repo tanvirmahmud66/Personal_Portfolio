@@ -68,7 +68,7 @@ const projects = [
         frontend:['Django Template Engine', 'Bootstrap','Chart.js'],
         backend:["Django", "MVT","Postgresql"],
         screenShots:[amarshop1,amarshop2,amarshop3,amarshop4],
-        projectLink:'https://amarshop-v1.onrender.com/admin-panel/'
+        projectLink:'https://tanvir62.pythonanywhere.com/admin-panel/'
     },
     {
         id:2,
